@@ -1,6 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.support.wait import WebDriverWait
-from drag_and_drop import DragAndDrop
+import drag_and_drop
 
 import autorization
 import unittest
@@ -19,8 +19,8 @@ class Test (unittest.TestCase):
         self.driver.get(base_url + "/droppable.php")
 
     def test_action_submenu(self):
-        move = DragAndDrop(self.driver)
-        assert (move.drag_and_drop() == "Dropped!")
+        move = drag_and_drop.move(self.driver, self.wait)
+        assert (move == "Dropped!")
 
     def tearDown(self):
         self.driver.quit()
