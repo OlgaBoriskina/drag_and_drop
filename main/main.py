@@ -1,8 +1,8 @@
 from selenium import webdriver
 from selenium.webdriver.support.wait import WebDriverWait
-
 import drag_and_drop
-import autorization
+
+import authorization
 import unittest
 
 base_url = "http://way2automation.com/way2auto_jquery"
@@ -14,7 +14,7 @@ class Test (unittest.TestCase):
         self.driver = webdriver.Chrome("chromedriver.exe")
         self.driver.get(base_url)
         self.wait = WebDriverWait(self.driver, 10)
-        autorization.autirize(self.wait)
+        authorization.authorize(self.wait)
         self.driver.refresh()
         self.driver.get(base_url + "/droppable.php")
 
