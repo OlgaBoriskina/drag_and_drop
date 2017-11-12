@@ -1,7 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.support.wait import WebDriverWait
-import drag_and_drop
 
+import drag_and_drop
 import autorization
 import unittest
 
