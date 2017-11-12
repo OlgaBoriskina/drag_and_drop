@@ -23,5 +23,5 @@ def password(wait):
 
 
 def submit(wait):
-    click_submit = wait.until(expected.element_to_be_clickable((By.XPATH, submit_locator)))
-    return click_submit
+    submit = wait.until(expected.element_to_be_clickable((By.XPATH, submit_locator)))
+    return submit
