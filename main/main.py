@@ -1,8 +1,8 @@
 from selenium import webdriver
 from selenium.webdriver.support.wait import WebDriverWait
-import drag_and_drop
 
-import authorization
+import drag_and_drop.drag_and_drop as drag_and_drop
+import authorization.authorization as authorization
 import unittest
 
 base_url = "http://way2automation.com/way2auto_jquery"
